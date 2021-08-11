@@ -12,6 +12,7 @@ use vierbergenlars\SemVer\{version, expression, SemVerException};
 /**
  * @property-read mixed devices
  * @property-read mixed errors
+ * @property-read mixed networkConditions
  * @property-read string product
  * @method \Nesk\Puphpeteer\Resources\Browser connect(array $options)
  * @method-extended \Nesk\Puphpeteer\Resources\Browser connect(array<string, mixed> $options)
@@ -25,8 +26,8 @@ use vierbergenlars\SemVer\{version, expression, SemVerException};
  * @method-extended void clearCustomQueryHandlers()
  * @method \Nesk\Puphpeteer\Resources\Browser launch(array $options = [])
  * @method-extended \Nesk\Puphpeteer\Resources\Browser launch(array<string, mixed>&array{ product: mixed, extraPrefsFirefox: array|string[]|mixed[] } $options = null)
- * @method string executablePath()
- * @method-extended string executablePath()
+ * @method string executablePath(string $channel = null)
+ * @method-extended string executablePath(string $channel = null)
  * @method string[] defaultArgs(array $options = [])
  * @method-extended string[] defaultArgs(array<string, mixed> $options = null)
  * @method \Nesk\Puphpeteer\Resources\BrowserFetcher createBrowserFetcher(array $options)
