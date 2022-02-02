@@ -6,12 +6,14 @@ use Nesk\Puphpeteer\Traits\AliasesSelectionMethods;
 use Nesk\Puphpeteer\Traits\AliasesEvaluationMethods;
 
 /**
+ * @method \Nesk\Puphpeteer\Resources\ElementHandle|null waitForSelector(string $selector, array $options = [])
+ * @method-extended \Nesk\Puphpeteer\Resources\ElementHandle|null waitForSelector(string $selector, array{ visible: bool, hidden: bool, timeout: float } $options = null)
  * @method \Nesk\Puphpeteer\Resources\ElementHandle|mixed[]|null asElement()
  * @method-extended \Nesk\Puphpeteer\Resources\ElementHandle|mixed[]|null asElement()
  * @method \Nesk\Puphpeteer\Resources\Frame|null contentFrame()
  * @method-extended \Nesk\Puphpeteer\Resources\Frame|null contentFrame()
- * @method mixed clickablePoint()
- * @method-extended mixed clickablePoint()
+ * @method mixed clickablePoint(mixed $offset = null)
+ * @method-extended mixed clickablePoint(mixed $offset = null)
  * @method void hover()
  * @method-extended void hover()
  * @method void click(array $options = [])
@@ -42,10 +44,10 @@ use Nesk\Puphpeteer\Traits\AliasesEvaluationMethods;
  * @method-extended mixed|null boundingBox()
  * @method mixed|null boxModel()
  * @method-extended mixed|null boxModel()
- * @method string|mixed|null screenshot(array $options = [])
- * @method-extended string|mixed|null screenshot(array{  } $options = null)
- * @method bool isIntersectingViewport()
- * @method-extended bool isIntersectingViewport()
+ * @method string|mixed screenshot(array $options = [])
+ * @method-extended string|mixed screenshot(array<string, mixed> $options = null)
+ * @method bool isIntersectingViewport(array $options = [])
+ * @method-extended bool isIntersectingViewport(array{ threshold: float } $options = null)
  */
 class ElementHandle extends JSHandle
 {

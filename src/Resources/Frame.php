@@ -7,6 +7,8 @@ use Nesk\Puphpeteer\Traits\AliasesSelectionMethods;
 use Nesk\Puphpeteer\Traits\AliasesEvaluationMethods;
 
 /**
+ * @method bool isOOPFrame()
+ * @method-extended bool isOOPFrame()
  * @method \Nesk\Puphpeteer\Resources\HTTPResponse|null goto(string $url, array $options = [])
  * @method-extended \Nesk\Puphpeteer\Resources\HTTPResponse|null goto(string $url, array{ referer: string, timeout: float, waitUntil: string|string[] } $options = null)
  * @method \Nesk\Puphpeteer\Resources\HTTPResponse|null waitForNavigation(array $options = [])

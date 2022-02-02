@@ -5,8 +5,8 @@ namespace Nesk\Puphpeteer\Resources;
 /**
  * @method mixed|null process()
  * @method-extended mixed|null process()
- * @method \Nesk\Puphpeteer\Resources\BrowserContext createIncognitoBrowserContext()
- * @method-extended \Nesk\Puphpeteer\Resources\BrowserContext createIncognitoBrowserContext()
+ * @method \Nesk\Puphpeteer\Resources\BrowserContext createIncognitoBrowserContext(array $options = [])
+ * @method-extended \Nesk\Puphpeteer\Resources\BrowserContext createIncognitoBrowserContext(array<string, mixed> $options = null)
  * @method \Nesk\Puphpeteer\Resources\BrowserContext[] browserContexts()
  * @method-extended \Nesk\Puphpeteer\Resources\BrowserContext[] browserContexts()
  * @method \Nesk\Puphpeteer\Resources\BrowserContext defaultBrowserContext()
